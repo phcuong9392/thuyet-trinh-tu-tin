@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>7 Bí Quyết Thuyết Trình Tự Tin – Ebook Miễn Phí</title>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --navy: #0a1628; --gold: #d4a017; --gold-light: #f0c040; --white: #ffffff; --gray: #b0bec5; --green: #27ae60; }
+    body { font-family: 'Be Vietnam Pro', sans-serif; background: var(--navy); color: var(--white); line-height: 1.6; }
+    .hero { min-height: 100vh; background: linear-gradient(160deg, #0a1628 0%, #0d2250 50%, #0a1628 100%); display: flex; align-items: center; justify-content: center; padding: 60px 20px; }
+    .hero-inner { max-width: 960px; width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .badge { display: inline-block; background: linear-gradient(90deg, var(--gold), var(--gold-light)); color: var(--navy); font-weight: 800; font-size: 13px; letter-spacing: 1.5px; padding: 6px 18px; border-radius: 30px; margin-bottom: 20px; text-transform: uppercase; }
+    .hero-text h1 { font-size: clamp(28px, 4vw, 46px); font-weight: 900; line-height: 1.2; margin-bottom: 16px; }
+    .hero-text h1 span { color: var(--gold-light); }
+    .hero-text .sub { font-size: 17px; color: var(--gray); margin-bottom: 32px; line-height: 1.7; }
+    .form-box { background: rgba(255,255,255,0.04); border: 1px solid rgba(212,160,23,0.3); border-radius: 20px; padding: 36px 32px; }
+    .form-box h2 { font-size: 20px; font-weight: 800; margin-bottom: 6px; color: var(--gold-light); }
+    .form-box p { font-size: 14px; color: var(--gray); margin-bottom: 24px; }
+    .form-box input { width: 100%; padding: 14px 18px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.07); color: var(--white); font-size: 15px; font-family: inherit; margin-bottom: 14px; outline: none; }
+    .form-box input::placeholder { color: rgba(255,255,255,0.35); }
+    .btn-cta { width: 100%; padding: 16px; background: linear-gradient(90deg, var(--gold), var(--gold-light)); color: var(--navy); font-size: 17px; font-weight: 800; border: none; border-radius: 10px; cursor: pointer; box-shadow: 0 4px 24px rgba(212,160,23,0.35); }
+    .privacy { text-align: center; font-size: 12px; color: var(--gray); margin-top: 12px; }
+    .cover-wrap { display: flex; justify-content: center; }
+    .cover-wrap img { width: 100%; max-width: 320px; border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.6); }
+    .section { max-width: 880px; margin: 0 auto; padding: 80px 20px; }
+    .section-label { text-align: center; font-size: 13px; letter-spacing: 2px; color: var(--gold); text-transform: uppercase; margin-bottom: 12px; font-weight: 700; }
+    .section h2 { text-align: center; font-size: clamp(24px, 3.5vw, 38px); font-weight: 900; margin-bottom: 48px; line-height: 1.3; }
+    .section h2 span { color: var(--gold-light); }
+    .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+    .benefit-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(212,160,23,0.2); border-radius: 14px; padding: 24px 22px; }
+    .benefit-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; color: var(--gold-light); }
+    .benefit-card p { font-size: 14px; color: var(--gray); line-height: 1.6; }
+    .benefit-icon { font-size: 28px; margin-bottom: 12px; }
+    .checklist { list-style: none; max-width: 600px; margin: 0 auto; }
+    .checklist li { font-size: 16px; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.06); display: flex; gap: 12px; }
+    .checklist li::before { content: '✓'; color: var(--green); font-weight: 900; font-size: 18px; flex-shrink: 0; }
+    .testimonial-box { background: rgba(255,255,255,0.04); border-left: 4px solid var(--gold); border-radius: 0 14px 14px 0; padding: 28px; margin-bottom: 20px; font-style: italic; color: rgba(255,255,255,0.85); font-size: 15px; line-height: 1.7; }
+    .testimonial-box strong { color: var(--gold-light); font-style: normal; }
+    .final-cta { background: linear-gradient(160deg, #0d2250, #0a1628); text-align: center; padding: 80px 20px; }
+    .final-cta h2 { font-size: clamp(26px, 4vw, 42px); font-weight: 900; margin-bottom: 12px; }
+    .final-cta h2 span { color: var(--gold-light); }
+    .form-inline { display: flex; gap: 12px; max-width: 520px; margin: 0 auto 12px; flex-wrap: wrap; }
+    .form-inline input { flex: 1; min-width: 200px; padding: 15px 18px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.07); color: var(--white); font-size: 15px; font-family: inherit; outline: none; }
+    .btn-cta-sm { padding: 15px 28px; background: linear-gradient(90deg, var(--gold), var(--gold-light)); color: var(--navy); font-size: 15px; font-weight: 800; border: none; border-radius: 10px; cursor: pointer; }
+    footer { background: #060e1c; text-align: center; padding: 24px 20px; font-size: 13px; color: rgba(255,255,255,0.3); }
+    @media (max-width: 680px) { .hero-inner { grid-template-columns: 1fr; gap: 36px; text-align: center; } .cover-wrap { order: -1; } .cover-wrap img { max-width: 220px; } .form-inline { flex-direction: column; } }
+  </style>
+</head>
+<body>
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="badge">🎁 Ebook Miễn Phí</div>
+      <h1>Bạn Run Khi Đứng<br/><span>Trước Đám Đông?</span></h1>
+      <p class="sub">Nhận ngay <strong style="color:#fff">7 Bí Quyết Thuyết Trình Tự Tin</strong> — kỹ thuật thực chiến giúp bạn làm chủ sân khấu, ngay cả khi bạn từng rất run.</p>
+      <div class="form-box">
+        <h2>📩 Nhận Ebook Miễn Phí</h2>
+        <p>Điền thông tin — ebook gửi ngay vào email của bạn</p>
+        <input type="text" placeholder="Họ và tên của bạn" />
+        <input type="email" placeholder="Email của bạn" />
+        <button class="btn-cta">🔓 GỬI CHO TÔI NGAY →</button>
+        <p class="privacy">🔒 Tôn trọng sự riêng tư. Không spam. Hủy bất cứ lúc nào.</p>
+      </div>
+    </div>
+    <div class="cover-wrap">
+      <img src="cover.jpg" alt="7 Bí Quyết Thuyết Trình Tự Tin" onerror="this.style.display='none'" />
+    </div>
+  </div>
+</section>
+<section style="background:#080f22;">
+  <div class="section">
+    <div class="section-label">Bên Trong Ebook</div>
+    <h2>Bạn Sẽ Khám Phá <span>7 Bí Quyết</span> Này...</h2>
+    <div class="benefits-grid">
+      <div class="benefit-card"><div class="benefit-icon">🧘</div><h3>Kiểm soát hồi hộp</h3><p>Kỹ thuật thở giúp bình tĩnh trong 60 giây trước khi bước lên sân khấu.</p></div>
+      <div class="benefit-card"><div class="benefit-icon">🎯</div><h3>Mở đầu thu hút</h3><p>Cách mở bài 30 giây đầu khiến khán giả không thể rời mắt.</p></div>
+      <div class="benefit-card"><div class="benefit-icon">💪</div><h3>Ngôn ngữ cơ thể tự tin</h3><p>Tư thế, ánh mắt, bàn tay — tín hiệu phi ngôn ngữ trông chuyên nghiệp.</p></div>
+      <div class="benefit-card"><div class="benefit-icon">📖</div><h3>Kể chuyện hay hơn đọc slide</h3><p>Storytelling giữ chân khán giả từ đầu đến cuối bài.</p></div>
+      <div class="benefit-card"><div class="benefit-icon">🛡️</div><h3>Xử lý tình huống khó</h3><p>Phục hồi khi quên bài, câu hỏi hóc búa hay sự cố bất ngờ.</p></div>
+      <div class="benefit-card"><div class="benefit-icon">📅</div><h3>Lịch luyện tập 7 ngày</h3><p>Chương trình thực hành đủ để thấy sự khác biệt rõ ràng.</p></div>
+    </div>
+  </div>
+</section>
+<section style="background:rgba(13,31,64,0.6);padding:60px 20px;">
+  <div class="section">
+    <div class="section-label">Đối Tượng Phù Hợp</div>
+    <h2>Ebook Này <span>Dành Cho Bạn</span> Nếu...</h2>
+    <ul class="checklist">
+      <li>Bạn lo lắng, run hoặc quên bài mỗi khi phải nói trước đám đông</li>
+      <li>Bạn muốn thuyết trình tốt hơn tại công sở, hội nghị, hay buổi pitch</li>
+      <li>Bạn đang chuẩn bị cho một buổi nói chuyện quan trọng sắp tới</li>
+      <li>Bạn muốn xây dựng sự nghiệp dựa trên sức ảnh hưởng cá nhân</li>
+    </ul>
+  </div>
+</section>
+<section style="background:#080f22;">
+  <div class="section">
+    <div class="section-label">Học Viên Nói Gì</div>
+    <h2>Kết Quả <span>Thực Tế</span></h2>
+    <div class="testimonial-box">"Sau khi áp dụng bí quyết số 3, lần đầu tiên tôi thuyết trình mà không run tay."<br/><br/><strong>— Nguyễn Minh Tuấn, Trưởng phòng kinh doanh</strong></div>
+    <div class="testimonial-box">"Rất thực chiến! Chỉ sau khi làm đúng 7 bước, tôi mới thực sự hiểu mình cần làm gì."<br/><br/><strong>— Trần Thị Lan, Giảng viên đại học</strong></div>
+  </div>
+</section>
+<section class="final-cta">
+  <h2>Sẵn Sàng <span>Làm Chủ Sân Khấu?</span></h2>
+  <p style="color:rgba(255,255,255,0.5);font-size:16px;margin-bottom:36px;">Nhận ebook miễn phí ngay — trước khi buổi thuyết trình tiếp theo của bạn đến.</p>
+  <div class="form-inline">
+    <input type="text" placeholder="Họ và tên" />
+    <input type="email" placeholder="Email của bạn" />
+    <button class="btn-cta-sm">NHẬN NGAY →</button>
+  </div>
+  <p style="font-size:12px;color:rgba(255,255,255,0.3);margin-top:10px;">🔒 Không spam. Hủy đăng ký bất cứ lúc nào.</p>
+</section>
+<footer>© 2026 — 7 Bí Quyết Thuyết Trình Tự Tin. Mọi quyền được bảo lưu.</footer>
+</body>
+</html>
